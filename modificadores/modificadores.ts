@@ -1,28 +1,25 @@
-// modificadores publicos 
+
+//modificadores privado es accesible solo dentro de la clase 
+//modificador publico puede ser de cualquier lado
+
 
 class Animal{
-    public nombre:string;
-    public tamaño:number;
+
+    private nombre:string;
+    private tamaño:number;
 
 
+    constructor (nombre_:string, tamaño_:number){
 
-    public constructor(nombre_:string, tamaño_:number){
-
-        this.nombre= nombre_;
+        this.nombre=nombre_;
         this.tamaño=tamaño_;
-
     }
 
-    public moverse ():void{
+    private correr():void{
 
-
-        console.log("animal moviendose");
-
+        console.log("correr fuerte");
     }
-
 
 }
+const perro = new Animal('linco', 23);
 
-const obj = new Animal('serpiente', 2)
-
-console.log(obj.moverse)
