@@ -1,4 +1,5 @@
-// //parametros rest para 
+// //parametros rest para vendria siendo una funcion con array
+
 
 const cartapostres = (postre:string, ...frutas:string[]):void =>{
 
